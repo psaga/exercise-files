@@ -1,0 +1,10 @@
+.container {
+    padding: 20px;
+}
+.table thead{
+    border-bottom: 2px solid black;
+}
+
+.table tr, .table td {
+    text-align: left;
+}

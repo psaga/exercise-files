@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv-flow/config app.js",
+    "test": "standard && mocha -r dotenv-flow/config 'tests'",
+    "standard-fix": "npx standard --fix"
+  },
+  "author": "Pablo Sagastizabal",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv-flow": "^4.0.1",
+    "express": "^4.18.2",
+    "papaparse": "^5.4.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "axios-mock-adapter": "^1.22.0",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "standard": "^17.1.0"
+  }
+}

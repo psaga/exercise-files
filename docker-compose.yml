@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  api:
+    container_name: files-api
+    restart: always
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    ports: 
+      - "5000:5000"
+  front:
+    container_name: files-front
+    restart: always
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on: 
+      - "api"
